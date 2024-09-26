@@ -28,37 +28,61 @@
 
 
 
-cars = ["bmw", "masterati", "audi", "mercedes", "ferrari"]
-print(f"these are a list of cars {cars}")
-print(f"the first car is {cars[0]}")
+# cars = ["bmw", "masterati", "audi", "mercedes", "ferrari"]
+# print(f"these are a list of cars {cars}")
+# print(f"the first car is {cars[0]}")
 
-#changing value of list
-cars[0] = "toyota"
-print(f"the first car is {cars[0]}")
+# #changing value of list
+# cars[0] = "toyota"
+# print(f"the first car is {cars[0]}")
 
-print(f"the last car is {cars[-1]}")
-cars[-1] = "lamborghini"
-print(f"the last car is {cars[-1]}")
+# print(f"the last car is {cars[-1]}")
+# cars[-1] = "lamborghini"
+# print(f"the last car is {cars[-1]}")
 
-#adding a new value to the list
-cars.append("bugatti")
-print(cars)
+# #adding a new value to the list
+# cars.append("bugatti")
+# print(cars)
 
-#loopingthrough the list
-#otherwise called iterating through the list
-for car in cars:
-    # print(len(car))
-    # print(car)
-    carRequest = input ("add a new car please: ")
-    cars.append(carRequest)
-    print(cars)
-    print(len(cars))
-    #print(cars.upper())
-    print (cars)
-    if len(cars) >= 10:
-        break
+# #looping through the list
+# #otherwise called iterating through the list
+# for car in cars:
+#     # print(len(car))
+#     # print(car)
+#     carRequest = input ("add a new car please: ")
+#     cars.append(carRequest)
+#     print(cars)
+#     print(len(cars))
+#     #print(cars.upper())
+# print (cars)
+    #if len(cars) >= 10:
+        #break
 
 #create a list of friends
 #make sure the intial is none
 friends = []
-
+#add a new friend to the list, add at least 5
+friends.append("friend1")
+friends.append("friend2")
+friends.append("friend3")
+friends.append("friend4")
+friends.append("friend5")
+print(friends)
+#remove a friend
+friends.remove("friend3")
+#insert a friend at a specific index, maybe 2
+friends.insert(2, "friend6")
+#print the list of friends
+print(friends)
+#loop through the list and print the friends name
+for friend in friends:
+    print(len(friends))
+    print (friends)
+    friendRequest = input ("add another name: ")
+    friends.append (friendRequest)
+    print(friends)
+    if len(friends) > 10:
+        break
+#see if a particular friend is in the list (boolean value)
+#if the list is greater than 10, break the loop
+ 
